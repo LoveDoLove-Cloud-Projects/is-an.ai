@@ -16,6 +16,10 @@
       {
          "type": "TXT",
          "value": "vc-domain-verify=seron.is-an.ai,6865c6134fda0f064193"
+      },
+      {
+         "type": "TXT",
+         "value": "vc-domain-verify=hopeai.is-an.ai,4ddf868aa9422431600d"
       }
    ],
    "_vercel_entries": [
@@ -33,6 +37,11 @@
          "value": "vc-domain-verify=seron.is-an.ai,6865c6134fda0f064193",
          "owner": "seron",
          "github_username": "Priyansxu"
+      },
+      {
+         "value": "vc-domain-verify=hopeai.is-an.ai,4ddf868aa9422431600d",
+         "owner": "hopeai",
+         "github_username": "PW1z80ohLB6q2AzAZWu1n"
       }
    ]
 }
