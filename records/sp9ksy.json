@@ -1,0 +1,13 @@
+{
+   "description": "portfoilo subdomain",
+   "owner": {
+      "github_username": "0dq_pHOSmCGcSg3HPDpld",
+      "email": "Sp9ksy@noreply.com"
+   },
+   "record": [
+      {
+         "type": "A",
+         "value": "192.168.1.1"
+      }
+   ]
+}
