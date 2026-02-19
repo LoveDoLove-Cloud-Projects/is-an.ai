@@ -1,0 +1,13 @@
+{
+   "description": "AI bot",
+   "owner": {
+      "github_username": "HVNxWAVR5JAQro93Ku4Fi",
+      "email": "andykung1020@noreply.com"
+   },
+   "record": [
+      {
+         "type": "A",
+         "value": "8.8.8.8"
+      }
+   ]
+}
