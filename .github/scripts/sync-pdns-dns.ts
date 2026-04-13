@@ -87,6 +87,9 @@ const INFRA_RECORDS: { subdomain: string; type: string; content: string; ttl?: n
   // ACME challenge for Cloudflare Advanced Certificate (*.is-an.ai, is-an.ai)
   { subdomain: "_acme-challenge", type: "TXT", content: "b-CBgXqKCAzF12h9p8RL2G12xcH2Wwo7oSjaqCfGx8w" },
   { subdomain: "_acme-challenge", type: "TXT", content: "lx-WkBJPe1UFy7594psF5Uh-tHaKOizVSOytn9QMZRQ" },
+  // AWS ACM certificate validation
+  { subdomain: "_a9ab750e916935c7640fcc445b3d680e.api", type: "CNAME", content: "_1fdee9dd2fb5e5194a89789cd0eaeea5.jkddzztszm.acm-validations.aws." },
+  { subdomain: "_5e4bd9003d776452019cfc956b117f9a", type: "CNAME", content: "_10d93bcec8bda96dcce155842175cc92.jkddzztszm.acm-validations.aws." },
 ];
 
 const INFRA_SUBDOMAINS = new Set(INFRA_RECORDS.map((r) => r.subdomain));
