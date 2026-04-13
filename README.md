@@ -44,7 +44,7 @@ See the [CLI documentation](https://github.com/is-an-ai/cli) for full usage.
 
 AI coding agents can register subdomains programmatically:
 
-- **Claude Code**: `/plugin install is-an-ai/cli`
+- **Claude Code**: `/plugin marketplace add is-an-ai/cli` then `/plugin install is-an-ai`
 - **OpenClaw**: `openclaw plugins install github:is-an-ai/cli`
 - **Any agent with GitHub access**: Use PR mode with `GITHUB_TOKEN`
 
