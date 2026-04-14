@@ -20,7 +20,6 @@ interface PdnsApiGetRRSet {
 interface PdnsApiPatchRecord {
   content: string;
   disabled: boolean;
-  priority?: number;
 }
 
 interface PdnsApiPatchRRSet {
@@ -394,11 +393,13 @@ async function processChanges(): Promise<void> {
         type: finalType,
         ttl: DEFAULT_TTL,
         changetype: "REPLACE",
-        records: finalRecords.map((r) => ({
-          content: normalizeContent(r.type, r.content),
-          disabled: false,
-          priority: r.priority,
-        })),
+        records: finalRecords.map((r) => {
+          let content = normalizeContent(r.type, r.content);
+          if (r.type === "MX" && r.priority !== undefined) {
+            content = `${r.priority} ${content}`;
+          }
+          return { content, disabled: false };
+        }),
       });
     }
 

@@ -19,7 +19,6 @@ interface PdnsApiGetRRSet {
 interface PdnsApiPatchRecord {
   content: string;
   disabled: boolean;
-  priority?: number;
 }
 
 interface PdnsApiPatchRRSet {
@@ -570,11 +569,14 @@ async function syncDNSRecords(): Promise<void> {
         type: finalType,
         ttl: DEFAULT_TTL,
         changetype: "REPLACE",
-        records: repoRecordsForRrset.map((r) => ({
-          content: normalizeContent(r.type, r.content),
-          disabled: false,
-          priority: r.priority,
-        })),
+        records: repoRecordsForRrset.map((r) => {
+          let content = normalizeContent(r.type, r.content);
+          // MX: priority must be part of content, not a separate field
+          if (r.type === "MX" && r.priority !== undefined) {
+            content = `${r.priority} ${content}`;
+          }
+          return { content, disabled: false };
+        }),
       });
     } else {
       // --- DELETE logic ---
