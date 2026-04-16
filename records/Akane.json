@@ -6,8 +6,8 @@
    },
    "record": [
       {
-         "type": "CNAME",
-         "value": "d2t4ubtfjuejkc.cloudfront.net"
+         "type": "TXT",
+         "value": "vc-domain-verify=akane.is-an.ai,f67fe873290ca704b864"
       }
    ]
 }
