@@ -1,0 +1,13 @@
+{
+   "description": "Static site hosting",
+   "owner": {
+      "github_username": "d9X9o-BWb30ElpnOMssbE",
+      "email": "Sleepy Ash@noreply.com"
+   },
+   "record": [
+      {
+         "type": "CNAME",
+         "value": "d2t4ubtfjuejkc.cloudfront.net"
+      }
+   ]
+}
