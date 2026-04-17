@@ -6,8 +6,8 @@
    },
    "record": [
       {
-         "type": "A",
-         "value": "211.221.75.212"
+         "type": "CNAME",
+         "value": "cf.090227.xyz"
       }
    ]
 }
