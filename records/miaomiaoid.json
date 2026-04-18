@@ -6,8 +6,8 @@
    },
    "record": [
       {
-         "type": "A",
-         "value": "47.128.150.203"
+         "type": "CNAME",
+         "value": "send.miaomiaoid"
       }
    ]
 }
